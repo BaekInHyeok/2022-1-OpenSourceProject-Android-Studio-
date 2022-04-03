@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+프로그램명 : activity_main.xml
+작성자 : 2020039096 백인혁
+작성일 : 2022.03.24
+프로그램 설명 : Week3 HW activity_main.xml
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!--토스트 메시지로 출력할 글자 또는 홈페이지 URL를 입력하는 Edittext-->
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+    </EditText>
+
+    <!--EditText에 입력한 글자를 토스트메시지로 출력하는 버튼-->
+    <Button
+        android:id="@+id/PrintTextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="글자 나타내기">
+    </Button>
+
+    <!--EditText에 작성된 URL 주소로 인터넷 페이지를 여는 버튼-->
+    <Button
+        android:id="@+id/PrintURLBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="홈페이지 열기">
+    </Button>
+
+    <!--라디오 버튼 선택에 따른 이미지 출력을 위한 라디오버튼 그룹-->
+    <RadioGroup
+        android:id="@+id/Select"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <!--android11.png를 어플리케이션 화면에 출력하는 라디오버튼-->
+        <RadioButton
+            android:id="@+id/picture1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="11.0(R)">
+        </RadioButton>
+
+        <!--android12.png를 어플리케이션 화면에 출력하는 라디오버튼-->
+        <RadioButton
+            android:id="@+id/picture2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="12.0(S)">
+        </RadioButton>
+    </RadioGroup>
+
+    <!--이미지 출력하는 ImageView-->
+    <ImageView
+        android:id="@+id/androidimage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="5dp">
+    </ImageView>
+
+</LinearLayout>
