@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+프로그램명:activity_main.xml
+작성자 : 2020039096 백인혁
+작성일 : 2022.03.30
+프로그램명 : 4장 연습문제 7번
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--Enalbled 속성 Checkbox-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChkEnable"
+        android:text="Enabled 속성"/>
+
+    <!--Clickable 속성 Checkbox-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChkClickable"
+        android:text="Clickable 속성"/>
+
+    <!--45도 회전 Checkbox-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChkRotate"
+        android:text="45도 회전"/>
+
+    <!--변경의 대상이 되는 버튼-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button"
+        android:layout_marginTop="100dp"
+        android:text="Button"
+        android:clickable="false"
+        android:enabled="false"/>
+
+
+
+</LinearLayout>

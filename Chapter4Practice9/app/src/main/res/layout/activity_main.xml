@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+프로그램명:activity_main.xml
+작성자 : 2020039096 백인혁
+작성일 : 2022.03.30
+프로그램명 : 4장 연습문제 9번
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--클릭될 때마다 하단의 이미지를 10도씩 회전시키는 버튼-->
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:drawableLeft="@drawable/chromeicon"
+        android:drawableRight="@drawable/chromeicon"
+        android:text="회전하기"
+        android:layout_gravity="center"/>
+
+    <!--이미지를 출력하는 ImageView-->
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/img"
+        android:layout_gravity="center"
+        android:src="@drawable/dog"/>
+
+</LinearLayout>

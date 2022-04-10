@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+프로그램명:activity_main.xml
+작성자 : 2020039096 백인혁
+작성일 : 2022.03.30
+프로그램명 : 4장 연습문제 8번
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Toast 메시지로 출력될 문자열을 입력받는 EditText-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edittext"
+        android:text=""
+        android:inputType="textPersonName"/>
+        <!--inputtype을 textPersonName으로 설정하면 가상키보드 엔터 대신 완료가 뜨며-->
+
+</LinearLayout>
