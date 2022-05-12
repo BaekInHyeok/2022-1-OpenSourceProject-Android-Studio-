@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         String medicName=URLEncoder.encode(str);
         String query="%EC%A0%84%EB%A0%A5%EB%A1%9C";
 
-        //이 부분이 핵심!
+
         String queryUrl="http://apis.data.go.kr/1471000/DURPrdlstInfoService01/getUsjntTabooInfoList?serviceKey=RZnyfUGsOhY2tWWUv262AHpeMQYn4Idqd5cgG0rGNHPd648m5j0Pu3eiS3ewN4XhhHT%2FvuliAmF9KLJdzh1TFA%3D%3D&itemName="+medicName+"&numOfRows=20&pageNo=1&type=xml";
         try {
             URL url=new URL(queryUrl);
