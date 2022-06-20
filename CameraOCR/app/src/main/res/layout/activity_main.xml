@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#ffffff"
+        android:id="@+id/imageContainer">
+
+        <!--    사진 찍는 버튼    -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAKE PICTURE"
+            android:textSize= "18dp"
+            android:id="@+id/takePicture"/>
+
+        <!--    사진 보여주는 이미지뷰    -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/OCRButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@id/imageContainer"
+        android:layout_marginTop="-2dp"
+        android:clickable="true">
+
+        <!--    텍스트 추출 버튼    -->
+        <Button
+            android:id="@+id/ocrButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="RUN OCR"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/namebutton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:onClick="mOnClick"
+            android:text="약 이름 연동"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OCRButtonContainer"
+        android:padding="10dp">
+
+        <!--    텍스트 추출 뷰    -->
+        <TextView
+            android:id="@+id/OCRTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/green_box"
+            android:text="이곳에 결과 출력"
+            android:textColor="#169cdf"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/OCRTextCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/green_box"
+        android:text="이곳에 결과 출력"
+        android:textColor="#169cdf"
+        android:textSize="20dp" />
+</RelativeLayout>
